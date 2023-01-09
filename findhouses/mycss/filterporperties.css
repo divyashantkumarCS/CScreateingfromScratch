@@ -1,0 +1,728 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header Section Starts */
+
+.left > div:nth-child(2) {
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.navigationTop {
+    background-color: rgb(255, 255, 255);
+}
+
+.right div > #primeBtn::after, .right div > #loginBtn::after{
+    color: rgb(244, 74, 93);
+}
+
+.right .postProp {
+    background-color: #ffc72c;
+}
+
+.right .postProp span {
+    background-color: white;
+}
+
+/* Header section Ends */
+
+/* Filter Section Starts */
+.filterSection {
+    position: fixed;
+    z-index: 1;
+    top: 48px;
+    display: flex;
+    height: auto;
+    padding: 15px 20px;
+    width: 100vw;
+    background-color: rgb(244, 74, 93);
+    border-bottom: solid 10px black;
+    margin-bottom: 50px;
+}
+
+.filterContainer, .propertyType {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterContainer div {
+    margin: 0 10px;
+}
+
+.propertyType, .filterOption {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.propertyType div {
+    padding: 3px 5px;
+    margin: 8px 0;
+}
+
+.propertyType div:first-child {
+    padding-left: 20px;
+    padding-right: 10px;
+    border-right: solid 1px black;
+}
+
+.filterSection .propertyType div:first-child::after{
+    content: '\f107';
+    padding-left: 15px;
+    font-family: "FontAwesome";
+}
+
+.propertyType div:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.propertyType div:last-child input {
+    outline: none;
+    border: none;
+    width: 100px;
+}
+
+.filterOption {
+    width: auto;
+    padding: 0;
+    height: auto;
+}
+
+.filterOption div {
+    padding: 3px 10px;
+    margin: 8px 0;
+}
+
+.filterSection .filterOption div::after {
+    content: '\f107';
+    padding-left: 7px;
+    font-family: "FontAwesome";
+}
+/* Filter Section Ends */
+
+.porpListCont {
+    padding-top: 30px;
+    background-color: rgba(200, 192, 194, 0.16);
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tab section Starts */
+.tabSection {margin-top: 130px;
+    margin-left: 20px;
+    width: 76vw;
+}
+
+.tabSection button {
+    font-size: 22px;
+    padding: 5px 15px;
+    border: 1px solid #d7d7d7;
+    margin-right: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: solid 3px rgb(244, 74, 93);
+}
+
+.tabSection button:hover {
+    border: solid 1px rgb(5, 3, 3);
+    border-bottom: solid 3px rgb(244, 74, 93);
+    background-color: #000;
+    color: #fff;
+}
+
+.tabSection button:focus {
+    outline: none;
+    border: solid 1px rgb(5, 3, 3);
+    background-color: #000;
+    color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+/* Tab Section Ends */
+
+/* CARD Section Starts */
+.cardSection {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 76vw;
+}
+
+.cardSection .cardContainer {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 24%), 0 1px 4px 0 rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.leftBlock {
+    padding: 18px;
+    padding-bottom: 10px;
+    width: 250px;
+    height: auto;
+}
+
+.imageBlock {
+    border-radius: 10px;
+    background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+    background-size: 300px 130px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 130px;
+}
+
+.imageBlock p {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    position: relative;
+    top: 101px;
+    text-align: center;
+    color: white;
+}
+
+.leftBlock .authority {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.detailsBlock {
+    width: 54%;
+    height: auto;
+    padding-top: 18px;
+}
+
+.detailsBlock .availability {
+    border: solid 1px rgb(0, 150, 129);
+    color: rgb(0, 150, 129);
+    width: 146px;
+    height: 21px;
+    line-height: 1.7;
+    font-size: 11px;
+    padding: 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.detailsBlock p:nth-child(2) {
+    /* border: solid 1px black; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 7px;
+    width: 80%;
+}
+
+.detailsBlock p:nth-child(3) {
+    margin-top: 8px;
+    text-decoration: underline;
+    font-size: 13px;
+    color: #686868;
+}
+
+.flatDetail {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    height: 65px;
+    background-color: rgb(243 241 241);
+}
+
+.detailsBlock .porpDescription {
+    width: 90%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.detailsBlock .porpDescription p {
+    font-size: 13px;
+    width: 99%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.detailsBlock .porpDescription span {
+    margin-left: -7px;
+}
+
+.detailsBlock .porpDescription span::after {
+    content: '\f107';
+    padding-left: 7px;
+    font-family: "FontAwesome";
+}
+
+
+.actionBlock {
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    width: 211px;
+    height: auto;
+    background-color: rgb(243 241 241);
+}
+
+.actionBlock .porpValue {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.actionBlock .propArea {
+    line-height: 18px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.actionBlock button {
+    margin-bottom: 15px;
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+    border: solid 1px rgb(244, 74, 93);
+}
+
+.actionBlock button:focus {
+    outline: none;
+    
+    color: white;
+}
+
+.actionBlock button:hover {
+    /* outline: none; */
+    border: solid 1px rgb(244, 74, 93);
+    background-color:  rgb(161, 2, 20);
+    color: white;
+}
+
+.actionBlock div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionBlock .ownerDetail {
+    color: white;
+    background-color: rgb(244, 74, 93);
+}
+
+.actionBlock .feedback {
+    font-size: 13px;
+    text-decoration: underline;
+}
+/* CARD Section Ends */
+
+
+/* Best Place Section Starts */
+.bestPlaceSection {
+    width: 77.5vw;
+    padding-left: 20px;    
+    margin-top: 70px;
+}
+
+.bestPlaceSection > h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bestPlaceSection > h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #2c84ff;
+    border-radius: 2px;
+}
+
+.bestPlacesCont {
+    background-color: #fff;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+}
+
+.nOPlaces > h4 {
+    margin-top: 30px;
+}
+
+.nOPlaces > p {
+    line-height: 21px;
+}
+
+.nOFlats {
+    display: flex;
+}
+
+.nOFlats div {
+    width: 290px;
+    height: 130px;
+    padding: 20px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+    margin-right: 18px;
+}
+
+.nOFlats div h4{
+    font-size: 16px
+}
+
+.nOFlats div p {
+    font-size: 14px;
+}
+
+.nOFlats div h4:last-child {
+    margin-top: 10px;
+    color: rgb(244, 74, 93);
+}
+
+/* Best Place Section Ends */
+
+/* Best  Project Section Starts*/
+.bestProjectSection {
+    width: 77.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.bestProjectSection h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bestProjectSection > h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #a702bd;
+    border-radius: 2px;
+}
+
+.porpCardCont {
+    display: flex;
+}
+
+.bestProjectSection > p {
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    text-decoration: underline;
+}
+
+.propCard {
+    width: 232px;
+    height: 280px;
+    padding: 20px;
+    border: solid 1px #d7d7d7;
+    border-top: solid 3px rgb(244, 74, 93);
+    border-radius: 10px;
+    margin-right: 14px;
+}
+
+.propCard p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #303030;
+}
+
+.propCard h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.propCard h4 {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.propCard .rToM {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.propCard h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(244, 74, 93);
+    margin-top: 7px;
+}
+/* Best  Project Section Ends*/
+
+
+/* Flat Prices Section Starts */
+.flatPriceSection {
+    width: 77.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.flatPriceSection > h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.flatPriceSection > h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #06d5fa;
+    border-radius: 2px;
+}
+
+.flatPriceSection table {
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #d7d7d7;
+}
+
+.flatPriceSection table tbody tr {
+    border-top: solid 1px #d7d7d7;
+}
+
+.flatPriceSection table thead tr th {
+    color: #000;
+    font-size: 17px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.flatPriceSection table thead tr th:first-child {
+    padding-left: 70px;
+}
+
+.flatPriceSection table tbody tr td {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flatPriceSection table tbody tr td:first-child {
+    padding-left: 70px;
+}
+
+.flatPriceSection > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Flat Prices Section Ends */
+
+/* About Place Section Starts */
+.aboutPlaceSection {
+    width: 77.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.aboutPlaceSection h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutPlaceSection > h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #1c9b22;
+    border-radius: 2px;
+}
+
+.aboutPlaceSection > div {
+    background-color: #fff;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+}
+
+.aboutPlaceSection > div .intro {
+    width: 98%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.aboutPlaceSection .placeDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div{
+    display: flex;
+    border-bottom: solid 1px #d7d7d7;
+    padding-top: 7px;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div p {
+    width: 40%;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.aboutPlaceSection .placeDetails .leftHalf > div h4 {
+    width: 60%;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.aboutPlaceSection .leftHalf > div p:hover, .aboutPlaceSection .leftHalf > div h4:hover {
+    overflow: visible;
+}
+
+.aboutPlaceSection .placeDetails .rightHalf {
+    border-radius: 10px;
+    width: 45%;
+    height: 100%;
+}
+
+.aboutPlaceSection .placeDetails .rightHalf img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutPlaceSection > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* About Place Section Ends */
+
+/* Place Real Estate Market Section Starts */
+.marketPlaceSection {
+    width: 77.5vw;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.marketPlaceSection h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.marketPlaceSection > h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #fc6100;
+    border-radius: 2px;
+}
+
+.marketPlaceSection .marketPlaceCont {
+    background-color: #fff;
+    padding: 20px 25px;
+    border: solid 1px #d7d7d7;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketPlaceSection .marketPlaceCont .placeIntro {
+    width: 48%;
+    height: 308px;
+    margin-right: 20px;
+    overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+.marketPlaceSection .marketPlaceCont .placeImage {
+    width: 48%;
+    height: 308px;
+}
+
+.marketPlaceSection .marketPlaceCont .placeImage img {  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.marketPlaceSection > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Place Real Estate Market Section Ends */
+
+
+/* ADVERTISMENT BLOCK Starts  */
+.advertBlock {
+    width: 22vw;
+    margin: 200px 20px;
+}
+
+.advertBlock div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.384);
+}
+
+.advertBlock div h2{
+    color: #666;
+}
+
+.advertBlock div:nth-child(1), 
+.advertBlock div:nth-child(3), 
+.advertBlock div:nth-child(10), 
+.advertBlock div:nth-child(12) 
+{
+    width: 100%;
+    height: 200px;
+}
+
+.advertBlock div:nth-child(4), 
+.advertBlock div:nth-child(6), 
+.advertBlock div:nth-child(8) 
+{
+    width: 100%;
+    height: 300px;
+}
+
+.advertBlock div:nth-child(5), 
+.advertBlock div:nth-child(11), 
+.advertBlock div:nth-child(9) 
+{
+    width: 100%;
+    height: 550px;
+}
+
+.advertBlock div:nth-child(2), 
+.advertBlock div:nth-child(7)
+{
+    width: 100%;
+    height: 700px;
+}
+/* ADVERTISMENT BLOCK Ends  */
+

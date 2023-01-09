@@ -1,0 +1,164 @@
+
+footer {
+    width: 100%;
+    padding-top: 40px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 15px;
+}
+
+footer .footerTop {
+    border-top: solid 1px rgb(197, 197, 197);
+    box-shadow: 1px -3px 5px rgb(197, 197, 197);
+    margin-bottom: 15px;
+    padding-top: 40px;
+}
+
+.contactus {
+    margin-top: 30px;
+}
+
+.contactus ul  {
+    padding-left: 0;
+}
+
+.contactus ul > li {
+    display: flex;
+    padding: 5px 0;
+}
+
+.contactus ul > li:first-child span{
+    padding-right: 17px;
+}
+
+.contactus ul > li > p {
+    margin-left: 10px;
+}
+
+.footerTop .footerNav h4::after, 
+.footerTop .footerTwitFeed h4::after,
+.footerTop .footerNewsLetter h4::after {
+    display: block;
+    content: " "; 
+    width: 50px;
+    height: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; 
+    font-weight: bold;
+    background-color: #FF385C;
+}
+
+.footerTop .footerNav .listCont ul li {
+    padding: 10px 0;
+}
+
+.footerTop .footerNav .listCont ul li a {
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+}
+
+.footerTop .footerTwitFeed .textCont .text {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.footerTop .footerTwitFeed .textCont .text h6 {
+    font-size: 16px;
+}
+
+.footerTop .footerTwitFeed .textCont .text div {
+    margin-left: 15px;
+}
+
+.footerTop .footerNewsLetter input {
+    height: 48px;
+    width: 255px;
+    margin-bottom: 15px;
+}
+
+.footerTop .footerNewsLetter input:focus {
+    outline: none;
+}
+
+.footerTop .footerNewsLetter input:first-child {
+    background-color: #282d32;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    color: white;
+}
+
+.footerTop .footerNewsLetter input:first-child::placeholder {
+    color: white;
+}
+
+.footerTop .footerNewsLetter input:last-child {
+    background-color: #293046;
+    border: none;
+}
+
+
+.footerBottom {
+    background-color: #282d32;
+}
+
+.footerBottom .footBottCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.footerBottom .netsocials {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footerBottom .netsocials li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+}
+
+.footerBottom .netsocials .facebook {
+    background-color: #3b5998;
+}
+
+.footerBottom .netsocials .twitter {
+    background-color: #1da1f2;
+}
+
+.footerBottom .netsocials .instagram {
+    background-color: #E1306C;
+}
+
+.footerBottom .netsocials .youtube {
+    background-color: #cd201f;
+}
+
+.footerBottom .netsocials li a {
+    color: white;
+}
+
+
+
+
