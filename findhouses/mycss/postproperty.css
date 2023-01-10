@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Header Section Starts */
+
+.left > div:nth-child(2) {
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.navigationTop {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #d7d7d7;
+    box-shadow: 1px 3px 10px #a7a6a6;
+}
+
+.right div > #primeBtn::after, .right div > #loginBtn::after{
+    color: rgb(244, 74, 93);
+}
+
+.right .postProp {
+    background-color: #ffc72c;
+}
+
+.right .postProp span {
+    background-color: white;
+}
+
+.navigationBottom {
+    border: none;
+}
+
+.right div:hover:not(.right .postProp) {
+    border: solid 1px #d7d7d7;
+}
+/* Header section Ends */
+
+
+
+/*Form Section Starts */
+.formSection {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+.leftBlock {
+    display: flex;
+    padding-right: 50px;
+}
+
+.formSection .leftBlock > div:first-child {
+    width: 400px;
+    height:450px;
+    background-image: url("../myImage/postPropPage/pp-hero-web.png");
+    background-repeat: no-repeat;
+    background-size: 400px 450px;
+}
+
+.formSection .leftBlock > div:first-child > div {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.formSection .leftBlock .textCont {
+    margin-top: 130px;
+    padding-left: 30px;
+}
+
+.textCont > div {
+    width: 300px;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.textCont > div:first-child {
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.textCont > div:first-child h3{
+    font-size: 30px;
+}
+
+.textCont > div:first-child h4 {
+    font-family: 'Damion', cursive;
+    font-size: 40px;
+}
+
+.textCont > div > span {
+    margin-right: 10px;    
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(0, 150, 129);
+}
+
+.textCont > div > p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.formSection .rightBlock {
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+.formSection .rightBlock .formCont {
+    width: 400px;
+    height: 470px;
+    border: solid 1px rgba(0, 150, 130, 0.37);
+    border-radius: 15px;
+    padding: 25px 25px;
+}
+
+.formSection .rightBlock .formCont > div {
+    margin-top: 25px;
+}
+
+.formSection .rightBlock .formCont > div label {
+    margin: 10px 3px 10px 0;
+    border: solid 1px #d7d7d7;
+    padding: 8px 25px;
+    border-radius: 25px;
+}
+
+.formSection .rightBlock .formCont > div label:hover:not(.mobCont label) {
+    cursor: pointer;
+}
+
+.formSection .rightBlock .formCont > div  .formRadio {
+    display: none;
+}
+
+.formSection .rightBlock .formCont > div  input[type=radio]:checked + label {
+    background-color: #e0f2f0;
+    border-color: #009681
+}
+.formSection .rightBlock .formCont > div:last-child > div {
+    margin-top: 20px;
+    display: flex;
+}
+.formSection .rightBlock .formCont > div:last-child > div p {
+    width: 120px;
+    margin-right: 20px;
+    border-bottom: solid 1px #d7d7d7;
+}
+.formSection .rightBlock .formCont > div:last-child > div p::after {
+    content: '\f107';
+    font-weight: bold;
+    padding-left: 40px;
+    font-family: "FontAwesome";
+    color: #b9b8b8;
+}
+.formSection .rightBlock .formCont > div:last-child > div .mobCont {
+    position: relative;
+}
+.formSection .rightBlock .formCont > div:last-child > div .mobCont input {
+    border: none;
+    border-bottom: solid 1px #d7d7d7;
+    font-size: 16px;
+}
+.formSection .rightBlock .formCont > div:last-child > div .mobCont label {
+    position: absolute;
+    left: -24px;
+    bottom: -14px;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    color: #878787;
+    transition: .2s ease-in;
+}
+.formSection .rightBlock .formCont > div:last-child > div .mobCont input:focus {
+    outline: none;
+}
+.formSection .rightBlock .formCont > div:last-child > div .mobCont input:focus + label {
+    font-size: 13px;
+    bottom: 7px;
+}
+/* Form Section Ends */
+
+/* HOW it WORK Section Starts */
+.howSection {
+    width: 100%;
+    height: 500px;
+}
+/* HOW it WORK Section Ends */

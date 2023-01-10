@@ -31,6 +31,13 @@ p {
     background-color: white;
 }
 
+.navigationBottom {
+    border: none;
+}
+
+.right div:hover:not(.right .postProp) {
+    border: solid 1px #d7d7d7;
+}
 /* Header section Ends */
 
 /* Filter Section Starts */
