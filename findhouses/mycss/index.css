@@ -111,6 +111,14 @@ p {
     height: 156px;
     overflow: hidden;
 }
+.featured .featuredCardsCont .card .imgCont img, 
+.recently .recentlyCardsCont .card .imgCont img,
+.blog .blogCardsCont .card .imgCont img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .featured .featuredCardsCont .card .card-body, 
 .recently .recentlyCardsCont .card .card-body,
