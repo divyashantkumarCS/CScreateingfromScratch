@@ -1,0 +1,196 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 100%;        
+    display: flex;
+}
+
+.formBlock{
+    width: 60%;
+    padding: 100px 20px 50px 141px;
+} 
+
+/* Section One Starts */
+.formBlock .sectionOne {    
+    padding-bottom: 40px;
+    background-image: url("../myImage/postPropPage/postProp.png");
+    background-repeat: no-repeat;
+    background-position: 450px 0px;
+}
+
+.formBlock .sectionOne h1 {
+    font-size: 27px;
+    font-weight: 700;
+}
+/* Section One Ends */
+
+
+/* Section Two Starts */
+.formBlock .sectionTwo {
+    padding: 17px 0 15px 24px;
+    background-color: #f4f4f4;
+}
+
+.formBlock .sectionTwo h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.formBlock .sectionTwo > div {
+    display: flex;
+}
+
+.formBlock .sectionTwo p {
+    font-size: 15px;
+    margin-right: 30px;
+}
+/* Section Two Ends */
+
+/* Section Three Starts */
+.sectionThree {
+    padding-top: 30px;
+}
+
+.sectionThree .personalDetails .optionCont > div:first-child, 
+.sectionThree .propDetails .optionCont > div:first-child 
+{
+    display: flex;
+    padding-top: 15px;
+}
+
+.sectionThree .personalDetails .optionCont > div > p, 
+.sectionThree .propDetails .optionCont > div > p
+{
+    width: 55px;
+    font-size: 15px;
+}
+
+.sectionThree .personalDetails .optionCont .options > input, 
+.sectionThree .propDetails .optionCont .options > input
+{
+    margin-right: 3px;
+}
+
+.sectionThree .personalDetails .optionCont .options > label, 
+.sectionThree .propDetails .optionCont .options > label
+{
+    margin-right: 18px;
+}
+
+.sectionThree .personalDetails p.customLabel, 
+.sectionThree .propDetails p.customLabel 
+{
+    padding-bottom: 4px;
+    font-size: 13px;
+}
+
+.sectionThree .personalDetails #perDetFormCont > div {
+    padding-top: 30px;
+}
+
+.sectionThree .personalDetails #perDetFormCont > div > input,
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont > input
+{
+    border: none;
+    width: 300px;
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont > input {
+    width: 177px;
+    margin-left: 20px;
+}
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont p {
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont p::after {
+    content: '\f107';
+    font-weight: bold;
+    padding-left: 30px;
+    font-family: "FontAwesome";
+    color: #d7d7d7;
+}
+
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont {
+    display: flex;
+    width: 300px;
+}
+
+.sectionThree .personalDetails #perDetFormCont > div > input:focus,
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont > input:focus
+{
+    outline: none;
+}
+
+.sectionThree .personalDetails #perDetFormCont > div > input::placeholder, 
+.sectionThree .personalDetails #perDetFormCont .mobile .mobCont > input::placeholder
+{
+    font-size: 15px;
+    color: #b5b5b5;
+}
+
+.sectionThree .propDetails {
+    padding-top: 45px;
+}
+
+.sectionThree .propDetails .propType {
+    margin-top: 25px;
+}
+
+.sectionThree .propDetails .propType #propTypeOptions {
+    margin-top: 5px;
+    border: none;
+    width: 300px;
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.sectionThree .propDetails .propType #propTypeOptions:focus {
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.sectionThree .propLocation {
+    padding-top: 45px;
+}
+
+.sectionThree .propLocation > div {
+    margin-top: 25px;
+}
+
+.sectionThree .propLocation > div .customLabel {    
+    padding-bottom: 4px;
+    font-size: 13px;
+}
+
+.sectionThree .propLocation > div input {
+    width: 300px;
+    margin-top: 5px;
+    border: none;
+    width: 300px;
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.sectionThree .propLocation > div input::placeholder {
+    font-size: 15px;
+    color: #b5b5b5;
+}
+
+.sectionThree .propLocation > div input:focus {
+    outline: none;
+}
+/* Section Three Ends */
+
+
+
+.advertBlock {
+    width: 40%;
+    padding-right: 121px;
+    background-color: rgba(106, 98, 92, 0.123);
+}

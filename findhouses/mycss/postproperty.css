@@ -26,12 +26,20 @@ a:hover {
     box-shadow: 1px 3px 10px #a7a6a6;
 }
 
+.right .MBprimeOption, .right .loginOption {
+    margin-top: 0.55rem;
+}
+
 .right div > #primeBtn::after, .right div > #loginBtn::after{
     color: rgb(244, 74, 93);
 }
 
 .right .postProp {
     background-color: #ffc72c;
+    border-radius: 8px;
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 6px;
 }
 
 .right .postProp span {
@@ -42,8 +50,9 @@ a:hover {
     border: none;
 }
 
-.right div:hover:not(.right .postProp) {
+.right > div:hover:not(.right .postProp) {
     border: solid 1px #d7d7d7;
+    border-bottom: none;
 }
 /* Header section Ends */
 
@@ -115,16 +124,19 @@ a:hover {
 }
 
 .formSection .rightBlock {
-    margin-top: 40px;
-    padding-left: 10px;
+    margin-top: 30px;
+    padding-left: 10px;    
+    width: 400px;
+    height: 470px;
 }
 
 .formSection .rightBlock .formCont {
-    width: 400px;
-    height: 470px;
+    position: fixed;
+    right: 40px;
     border: solid 1px rgba(0, 150, 130, 0.37);
     border-radius: 15px;
     padding: 25px 25px;
+    padding-bottom: 17px;
 }
 
 .formSection .rightBlock .formCont > div {
@@ -150,31 +162,31 @@ a:hover {
     background-color: #e0f2f0;
     border-color: #009681
 }
-.formSection .rightBlock .formCont > div:last-child > div {
+.formSection .rightBlock .formCont .contact > div {
     margin-top: 20px;
     display: flex;
 }
-.formSection .rightBlock .formCont > div:last-child > div p {
+.formSection .rightBlock .formCont .contact > div p {
     width: 120px;
     margin-right: 20px;
     border-bottom: solid 1px #d7d7d7;
 }
-.formSection .rightBlock .formCont > div:last-child > div p::after {
+.formSection .rightBlock .formCont .contact > div p::after {
     content: '\f107';
     font-weight: bold;
     padding-left: 40px;
     font-family: "FontAwesome";
     color: #b9b8b8;
 }
-.formSection .rightBlock .formCont > div:last-child > div .mobCont {
+.formSection .rightBlock .formCont .contact > div .mobCont {
     position: relative;
 }
-.formSection .rightBlock .formCont > div:last-child > div .mobCont input {
+.formSection .rightBlock .formCont .contact > div .mobCont input {
     border: none;
     border-bottom: solid 1px #d7d7d7;
     font-size: 16px;
 }
-.formSection .rightBlock .formCont > div:last-child > div .mobCont label {
+.formSection .rightBlock .formCont .contact > div .mobCont label {
     position: absolute;
     left: -24px;
     bottom: -14px;
@@ -184,18 +196,129 @@ a:hover {
     color: #878787;
     transition: .2s ease-in;
 }
-.formSection .rightBlock .formCont > div:last-child > div .mobCont input:focus {
+.formSection .rightBlock .formCont .contact > div .mobCont input:focus {
     outline: none;
 }
-.formSection .rightBlock .formCont > div:last-child > div .mobCont input:focus + label {
+.formSection .rightBlock .formCont .contact > div .mobCont input:focus + label {
     font-size: 13px;
     bottom: 7px;
 }
+
+.formSection .rightBlock .formCont .formSubmit {
+    margin-top: 32px;
+}
+.formSection .rightBlock .formCont .formSubmit button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(244, 74, 93);
+    color: white;
+}
 /* Form Section Ends */
+
 
 /* HOW it WORK Section Starts */
 .howSection {
-    width: 100%;
-    height: 500px;
+    width: 100%;  
+    padding-left: 40px;  
+    padding-top: 100px;
+}
+
+.howSection > div {
+    display: flex;
+    height: 120px;
+}
+
+.howSection > div .imgCont {
+    width: 200px;
+    height: 120px;
+    margin-right: 40px;
+}
+
+.howSection .stepOne {
+    margin-top: 40px;
+}
+
+.howSection .imgCont {
+    background-image: url("../myImage/postPropPage/pp-web-sprite.svg");
+    background-repeat: no-repeat;
+}
+
+.howSection .stepOne .imgCont {
+    background-position: -36px -37px;
+}
+
+.howSection .stepTwo, .howSection .stepThree {
+    margin-top: 70px;
+}
+
+.howSection .stepTwo .imgCont {
+    background-position: -36px -200px;
+}
+
+.howSection .stepThree .imgCont {
+    background-position: -36px -374px;
+}
+
+.howSection > div .textCont {
+    width: 350px;
 }
 /* HOW it WORK Section Ends */
+
+
+/* Tips Section Starts */
+.tipsSection {
+    width: 100%;
+    padding-left: 40px; 
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.tipsSection > div {
+    display: flex;
+    margin-top: 50px;
+}
+
+.tipsSection > div .imgCont {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(244, 74, 94, 0.134);
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.tipsSection .propAd {
+    margin-top: 35px;
+}
+
+.tipsSection .imgCont {
+    background-image: url("../myImage/postPropPage/pp-web-sprite.svg");
+    background-repeat: no-repeat;
+}
+
+.tipsSection .propAd .imgCont {
+    background-position: -25px -525px;
+}
+
+.tipsSection .quality .imgCont {
+    background-position: -25px -602px;
+}
+
+.tipsSection .locality .imgCont {
+    background-position: -25px -682px;
+}
+
+.tipsSection .description .imgCont {
+    background-position: -23px -761px;
+}
+
+.tipsSection .additionalDetail .imgCont {
+    background-position: -25px -840px;
+}
+
+.tipsSection > div .textCont {
+    width: 350px;
+}
+/* Tips Section Ends */

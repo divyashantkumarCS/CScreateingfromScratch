@@ -23,6 +23,7 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="./mycss/navigation.css">
     <link rel="stylesheet" href="./mycss/postproperty.css">
+    <link rel="stylesheet" href="./mycss/postPropFormPage.css">
 </head>
 
 <body>
@@ -266,162 +267,137 @@
         <!-- Header Ends -->
 
         <main>
-            <!-- Form Section Starts -->
-            <section class="formSection">
-                <div class="leftBlock">
-                    <div>                    
-                        <div><a href="../index.html">Home</a> > Post Property Ads</div>
-                    </div>
-                    <div class="textCont">
-                        <div>
-                            <h3>Post property Ad to sell or rent online for</h3>
-                            <h4>Free!</h4>
-                        </div>
-                        <div>
-                            <span><i class="fa fa-check-circle"></i></span>
-                            <p>Get Access to 4 Lakh + Buyers</p>
-                        </div>
-                        <div>
-                            <span><i class="fa fa-check-circle"></i></span>
-                            <p>Sell Faster with Premium Service</p>
-                        </div>
-                        <div>
-                            <span><i class="fa fa-check-circle"></i></span>
-                            <p>Get Expert Advice on Market Trends and Insights</p>
-                        </div>
-                    </div>
+            <div class="formBlock">
+                <!-- Section One Starts -->
+                <div class="sectionOne">
+                    <h1>Sell or Rent your Property</h1>
+                    <p>We've over <sapn style="font-weight: 700;">15 Lac buyers and tenants</sapn> for you!</p>
                 </div>
-                <div class="rightBlock">
-                    <div class="formCont">
-                        <h3>Let's get you started</h3>
-                        <div>
-                            <h5>You are : </h5>
+                <!-- Section One Ends -->
+
+                <!-- Section Two Starts -->
+                <div class="sectionTwo">
+                    <h5>You are posting this property for <span style="text-decoration: line-through; text-decoration-color: red;">₹5000</span> <span style="padding:0 8px;background-color: #ffc72c;">FREE!</span></h5>
+                    <div>
+                        <p>
+                            <i class="fa fa-check" style="color: rgb(2, 182, 74);"></i>
+                            <span style="font-weight: 600;"> Free</span> 
+                            Professional Photoshoot
+                        </p>
+                        <p>
+                            <i class="fa fa-check" style="color: rgb(2, 182, 74);"></i>
+                             Get Contact Details of upto 
+                            <span style="font-weight: 600;">5</span> 
+                            Responses
+                        </p>
+                    </div>
+                    <p>
+                        <i class="fa fa-check" style="color: rgb(2, 182, 74);"></i>
+                         Access to 
+                        <span style="font-weight: 600;">15 Lac</span> 
+                        Buyers & Tenants
+                    </p>
+                </div>
+                <!-- Section Two Ends -->
+
+                <!-- Section Three Starts -->
+                <div class="sectionThree">
+                    <div class="personalDetails">
+                        <h5>Personal Details</h5>
+                        <div class="optionCont">
                             <div>
-                                <input class="formRadio" type="radio" id="owner" value="Owner" name="youare" onchange="selector(event)">
-                                <label for="owner">Owner</label>
+                                <p>I am </p>
+                                <div class="options">
+                                    <input type="radio" id="owner" name="personalDetail" onclick="personalDetail('owner')">
+                                    <label for="owner">Owner</label>
     
-                                <input class="formRadio" type="radio" id="agent" value="agent" name="youare" onchange="selector(event)">
-                                <label for="agent">Agent</label>
+                                    <input type="radio" id="agent" name="personalDetail" onclick="personalDetail()">
+                                    <label for="agent">Agent</label>
     
-                                <input class="formRadio" type="radio" id="builder" value="builder" name="youare" onchange="selector(event)">
-                                <label for="builder">Builder</label>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <h5>You are here to : </h5>
-                            <div>
-                                <input class="formRadio" type="radio" id="sell" value="sell" name="hereto" onchange="selector(event)">
-                                <label for="sell">Sell</label>
-    
-                                <input class="formRadio" type="radio" id="rent" value="rent" name="hereto" onchange="selector(event)">
-                                <label for="rent">Rent/lease</label>
-    
-                                <input class="formRadio" type="radio" id="pg" value="pg" name="hereto" onchange="selector(event)">
-                                <label for="pg">List as PG</label>
-                            </div>
-                        </div>
-    
-                        <div class="contact">
-                            <h5>Your contact number</h5>
-                            <div>
-                                <p>IND +91</p>
-                                <div class="mobCont">
-                                    <input type="text" id="mob" name="mobile">
-                                    <label for="mob">Mobile Number</label>                                
+                                    <input type="radio" id="builder" name="personalDetail" onclick="personalDetail()">
+                                    <label for="builder">Builder</label>
                                 </div>
-                            </div> 
+                            </div>
+                            <div id="perDetFormCont">
+                                
+                            </div>
                         </div>
-                        <div class="formSubmit">
-                            <a href="./postPropFormPage.html"><button type="button">Start Now</button></a>
+                    </div>
+
+                    <div class="propDetails">
+                        <h5>Property Details</h5>
+                        <div class="optionCont">
+                            <div>
+                                <p>For </p>
+                                <div class="options">
+                                    <input type="radio" id="owner" name="personalDetail">
+                                    <label for="owner">Sell</label>
+    
+                                    <input type="radio" id="agent" name="personalDetail">
+                                    <label for="agent">Rent/Lease</label>
+    
+                                    <input type="radio" id="builder" name="personalDetail">
+                                    <label for="builder">PG/Hostel</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="propType">
+                            <p class="customLabel">Property Type</p>
+                            <select name="" id="propTypeOptions">
+                                <Option value="Select Property Type" selected>Select Property Type</Option>
+
+                                <Option value="">ALL RESIDENTIAL</Option>
+
+                                <Option value="">Flat/ Apartment</Option>
+                                <Option value="Residential House">Residential House</Option>
+                                <Option value="Villa">Villa</Option>
+                                <Option value="Builder Floor Apartment">Builder Floor Apartment</Option>
+                                <Option value="Penthouse">Penthouse</Option>
+                                <Option value="Studio Apartment">Studio Apartment</Option>
+                                <Option value="Service Apartment">Service Apartment</Option>
+
+                                <Option value="">ALL COMMERCIAL</Option>
+
+                                <Option value="Commercial Office Space">Commercial Office Space</Option>
+                                <Option value="Office in IT Park/ SEZ">Office in IT Park/ SEZ</Option>
+                                <Option value="Commercial Shop">Commercial Shop</Option>
+                                <Option value="Commercial Showroom">Commercial Showroom</Option>
+                                <Option value="Commercial Land">Commercial Land</Option>
+                                <Option value="Warehouse/ Godown">Warehouse/ Godown</Option>
+                                <Option value="Industrial Land">Industrial Land</Option>
+                                <Option value="Industrial Building">Industrial Building</Option>
+                                <Option value="Industrial Shed">Industrial Shed</Option>
+
+                                <Option value="">ALL AGRICULTURAL</Option>
+
+                                <Option value="Agricultural Land">Agricultural Land</Option>
+                                <Option value="Farm House">Farm House</Option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="propLocation">
+                        <h5>Property Location</h5>
+                        <div class="city">
+                            <p class="customLabel">City</p>
+                            <input type="text" name="city" id="city" placeholder="Enter City">
+                        </div>
+                        <div class="locality">
+                            <p class="customLabel">Locality</p>
+                            <input type="text" name="locality" id="locality" placeholder="Enter Locality">
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Form Section Ends -->
-    
-            <!-- HOW it WORK Section Starts -->
-            <section class="howSection">
-                <h2>How it works</h2>
-                <div class="stepOne">
-                    <div class="imgCont">
-    
-                    </div>
-                    <div class="textCont">
-                        <h6>Step 1:</h6>
-                        <h5>Post your Property Ad</h5>
-                        <p>Enter all details like locality name, amenities etc. along with uploading Photos</p>
-                    </div>
-                </div>
-                <div class="stepTwo">
-                    <div class="imgCont">
-    
-                    </div>
-                    <div class="textCont">                
-                        <h6>Step 2:</h6>
-                        <h5>Check Responses on Dashboard</h5>
-                        <p>Get access to Buyer/Tenant contact details & connect easily</p>
-                    </div>            
-                </div>
-                <div class="stepThree">
-                    <div class="imgCont">
-    
-                    </div>
-                    <div class="textCont">
-                        <h6>Step 3:</h6>
-                        <h5>Sell/Rent faster with instant Connect</h5>
-                        <p>Negotiate with your prospective Buyer/Tenant & mutually close the deal.(site-visit)</p>
-                    </div>
-                </div>
-            </section>
-            <!-- HOW it WORK Section Ends -->
-    
-            <!-- Tips Section Starts -->
-            <section class="tipsSection">
-                <h2>Tips on Selling a Property Online</h2>
-                <div class="propAd">
-                    <div class="imgCont"></div>
-                    <div class="textCont">
-                        <h5>Post your Property Ad</h5>
-                        <p>Enter all details like locality name, amenities etc. along with uploading Photos</p>
-                    </div>
-                </div>
-                <div class="quality">
-                    <div class="imgCont"></div>
-                    <div class="textCont">
-                        <h5>Add Quality Photos</h5>
-                        <p>Do not forget to add high-quality photos as it's key for any property to stand out. You can always request a photoshoot of your property through Magicbricks "Photoshoot Service".</p>
-                    </div>            
-                </div>
-                <div class="locality">
-                    <div class="imgCont"></div>
-                    <div class="textCont">
-                        <h5>Choose Correct Locality/Address</h5>
-                        <p>Make sure to accurately map your locality while filling in the details of your property. Adding a correct locality is essential to receive genuine queries for your property.</p>
-                    </div>
-                </div>
-                <div class="description">
-                    <div class="imgCont"></div>
-                    <div class="textCont">
-                        <h5>Write a Great Description</h5>
-                        <p>Provide a short description for your property highlighting the key USPs and all the relevant details to help buyers make a decision. On Magicbricks, you can always request a stellar description by "Content Experts".</p>
-                    </div>            
-                </div>
-                <div class="additionalDetail">
-                    <div class="imgCont"></div>
-                    <div class="textCont">
-                        <h5>Add additional details</h5>
-                        <p>You need to add all the relevant details about your property like the type of furnishing, flooring, water supply, etc. for it to rank higher in search results to catch the buyer's eye.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- Tips Section Ends -->
-        </main>
-        
+                <!-- Section Three Ends -->
 
-        <!-- My js -->
-        <script src="./myjs/postProp.js"></script>
+            </div>
+            <div class="advertBlock">
 
+            </div>
+        </main>        
+    </div>
+
+    <!-- My script -->
+    <script src="./myjs/postProp.js"></script>
 </body>
-
 </html>
