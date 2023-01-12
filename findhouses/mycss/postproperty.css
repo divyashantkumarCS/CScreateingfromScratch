@@ -91,34 +91,34 @@ a:hover {
     padding-left: 30px;
 }
 
-.textCont > div {
+.formSection .leftBlock .textCont > div {
     width: 300px;
     display: flex;
     padding-bottom: 15px;
 }
 
-.textCont > div:first-child {
+.formSection .leftBlock .textCont > div:first-child {
     flex-direction: column;
     padding-bottom: 25px;
 }
 
-.textCont > div:first-child h3{
-    font-size: 30px;
+.formSection .leftBlock .textCont > div:first-child h3{
+    font-size: 30px; 
 }
 
-.textCont > div:first-child h4 {
+.formSection .leftBlock .textCont > div:first-child h4 {
     font-family: 'Damion', cursive;
     font-size: 40px;
 }
 
-.textCont > div > span {
+.formSection .leftBlock .textCont > div > span {
     margin-right: 10px;    
     font-size: 18px;
     font-weight: 100;
     color: rgb(0, 150, 129);
 }
 
-.textCont > div > p {
+.formSection .leftBlock .textCont > div > p {
     font-size: 17px;
     font-weight: 500;
 }

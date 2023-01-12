@@ -20,10 +20,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i%7CMontserrat:600,800" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- MY CSS -->
+    <!-- MY CSS -->    
     <link rel="stylesheet" href="./mycss/navigation.css">
     <link rel="stylesheet" href="./mycss/postproperty.css">
     <link rel="stylesheet" href="./mycss/postPropFormPage.css">
+    <link rel="stylesheet" href="./mycss/footer.css">
 </head>
 
 <body>
@@ -223,7 +224,10 @@
                         <button id="primeBtn" type="button">MB Prime</button>
                         <div class="MBprimeOption">
                             <div class="divOne">
-                                <h3>Introducing MB Prime</h3>
+                                <div class="iconCont">
+
+                                </div>
+                                <h3><span id="introducing">Introducing</span> MB <span id="prime">Prime</span></h3>
                                 <h4>One membership, many exclusive privileges</h4>
                             </div>
                             <div class="divTwo">
@@ -232,28 +236,30 @@
                                 <p>Exclusive partner discounts</p>
                             </div>
                             <div class="divThree">
-                                <button type="button">Login</button>
+                                <button type="button">Join Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="login">
                         <button id="loginBtn" type="button">Login</button>
                         <div class="loginOption">
-                            <p>My Activity</p>
-                            <div>
-                                <p>Contacted Properties</p>
-                                <p>Viewed Properties</p>
-                                <p>Shortlisted Properties</p>
-                                <p>Searches</p>
+                            <div class="textCont">
+                                <p class="myActivity">My Activity</p>
+                                <div class="propRelated">
+                                    <a href="#">Contacted Properties</a>
+                                    <a href="#">Viewed Properties</a>
+                                    <a href="#">Shortlisted Properties</a>
+                                    <a href="#">Searches</a>
+                                </div>
+                                <div>
+                                    <a href="#">Recommendations</a>
+                                    <a href="#">My Profile</a>
+                                </div>
                             </div>
-                            <div>
-                                <p>Recommendations</p>
-                                <p>My Profile</p>
-                            </div>
-                            <div>
+                            <div class="loginBtnCont">
                                 <button type="button">Login</button>
                             </div>
-                            <p>New to Magicbricks? Sign Up</p>
+                            <p>New to Magicbricks? <span>Sign Up</span></p>
                         </div>
                     </div>
                     <div class="postProp">
@@ -308,13 +314,13 @@
                             <div>
                                 <p>I am </p>
                                 <div class="options">
-                                    <input type="radio" id="owner" name="personalDetail" onclick="personalDetail('owner')">
+                                    <input type="radio" id="owner" name="personalDetail" onchange="personalDetail('owner')">
                                     <label for="owner">Owner</label>
     
-                                    <input type="radio" id="agent" name="personalDetail" onclick="personalDetail()">
+                                    <input type="radio" id="agent" name="personalDetail" onchange="personalDetail()"checked>
                                     <label for="agent">Agent</label>
     
-                                    <input type="radio" id="builder" name="personalDetail" onclick="personalDetail()">
+                                    <input type="radio" id="builder" name="personalDetail" onchange="personalDetail()">
                                     <label for="builder">Builder</label>
                                 </div>
                             </div>
@@ -330,14 +336,14 @@
                             <div>
                                 <p>For </p>
                                 <div class="options">
-                                    <input type="radio" id="owner" name="personalDetail">
-                                    <label for="owner">Sell</label>
+                                    <input type="radio" id="sell" name="propDetail">
+                                    <label for="sell">Sell</label>
     
-                                    <input type="radio" id="agent" name="personalDetail">
-                                    <label for="agent">Rent/Lease</label>
+                                    <input type="radio" id="rent" name="propDetail" checked>
+                                    <label for="rent">Rent/Lease</label>
     
-                                    <input type="radio" id="builder" name="personalDetail">
-                                    <label for="builder">PG/Hostel</label>
+                                    <input type="radio" id="pg" name="propDetail">
+                                    <label for="pg">PG/Hostel</label>
                                 </div>
                             </div>
                         </div>
@@ -390,11 +396,147 @@
                 </div>
                 <!-- Section Three Ends -->
 
+                <!-- Section Four Starts -->
+                <div class="sectionFour">
+                    <div class="checkboxCont" id="checkboxCont">
+                        <div>
+                            <input type="checkbox" id="checkboxTwo" checked>
+                            <label for="checkboxTwo">
+                                I agree to CheckedSpot <a href="#">T&C</a>, 
+                                <a href="#">Privacy Policy</a>, & 
+                                <a href="#">Cookie Policy</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="loginBtnCont">
+                        <button type="button">Login & Post Property</button>
+                    </div>
+                </div>
+                <!-- Section Four Ends -->
+
+                <!-- Section Five Starts -->
+                <div class="sectionFive">
+                    <h5>Looking to Sell or Rent your Flat?</h5>
+                    <p>
+                        Do you want to Sell your flat or put your house on rent? Magicbricks has the right solution for you.Your advertisement will be viewed by millions of buyers and tenants in India.Magicbricks provides you the best classified for your requirement. Our website offers one free property ad that you can use for selling or renting . You will be able to sell or rent every real estate property from flat or house to land , even commercial property fast and immediately.                        
+                    </p>
+                </div>
+                <!-- Section Five Ends -->
             </div>
             <div class="advertBlock">
 
             </div>
-        </main>        
+        </main>   
+        
+        <!-- START FOOTER -->
+        <footer class="first-footer">
+            <div class="footerTop">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-lg-3 col-md-6">
+                            <div class="netabout">
+                                <a href="#" style="margin-left: -25px;">
+                                    <img src="./images/logocheckedspot.png" alt="" height="85px" width="240px">
+                                </a>
+                                <p>Please feel free to reach us using the contact details below!</p>
+                            </div>
+                            <div class="contactus">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; </span>                                    
+                                        <p>#544,RK Hegde Nagar Main Road First Floor,Before Fame Diognostic Bangalore</p>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; </span>
+                                        <p>+91-9606937470, +91-9606937471</p>
+    
+                                    </li>
+                                    <li>
+                                        <span> <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; </span>
+                                        <p>info@checkedspot.com</p>
+    
+    
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 footerNav">
+                            <h4>Navigation</h4>
+                            <div class="listCont">
+                                <ul class="nav-right">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li class="no-mgb"><a href="./findhouses/contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 footerTwitFeed">
+                            <h4>Twitter Feeds</h4>
+                            <div class="textCont">
+                                <div class="text">
+                                    <span><i class="fa fa-twitter" aria-hidden="true"></i> &nbsp; </span>
+                                    <div>
+                                        <p><a href="#">@findhouses</a>
+                                            all share them with me baby said inspet.</p>
+                                        <h6>about 5 days ago</h6>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <span><i class="fa fa-twitter" aria-hidden="true"></i> &nbsp; </span>
+                                    <div>
+                                        <p><a href="#">@findhouses</a>
+                                            all share them with me baby said inspet.</p>
+                                        <h6>about 5 days ago</h6>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <span><i class="fa fa-twitter" aria-hidden="true"></i> &nbsp; </span>
+                                    <div>
+                                        <p><a href="#">@findhouses</a>
+                                            all share them with me baby said inspet.</p>
+                                        <h6>about 5 days ago</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 footerNewsLetter">
+                            <div class="newsletters">
+                                <h4>Newsletters</h4>
+                                <p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe to receive
+                                    news in your inbox.</p>
+                            </div>
+                            <form class="bloq-email mailchimp form-inline" method="post">
+                                <label for="subscribeEmail" class="error"></label>
+                                <div class="email">
+                                    <input type="email" id="subscribeEmail" name="EMAIL" placeholder="Enter Your Email">
+                                    <input type="submit" value="Subscribe">
+                                    <p class="subscription-success"></p>
+                                </div>
+                            </form>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footerBottom">
+                <div class="container footBottCont">
+                    <p>2021 © Copyright - All Rights Reserved.</p>
+                    <ul class="netsocials">
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="youtube"><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <!-- END FOOTER -->
+
     </div>
 
     <!-- My script -->
