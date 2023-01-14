@@ -184,6 +184,7 @@ p {
 }
 
 .imageBlock {
+    position: relative;
     border-radius: 10px;
     background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
     background-size: 300px 130px;
@@ -193,9 +194,10 @@ p {
 }
 
 .imageBlock p {
-    background-color: rgba(0, 0, 0, 0.6);
     margin: 0;
-    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
     top: 101px;
     text-align: center;
     color: white;
@@ -211,15 +213,16 @@ p {
     width: 54%;
     height: auto;
     padding-top: 18px;
+    position: relative;
 }
 
-.detailsBlock .availability {
+.detailsBlock .availabilitySec .availability {
     border: solid 1px rgb(0, 150, 129);
     color: rgb(0, 150, 129);
-    width: 146px;
-    height: 21px;
+    width: 135px;
+    height: 19px;
     line-height: 1.7;
-    font-size: 11px;
+    font-size: 10px;
     padding: 0;
     text-align: center;
     border-radius: 15px;
@@ -229,32 +232,232 @@ p {
     /* border: solid 1px black; */
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-top: 7px;
+    margin-top: 5px;
     width: 80%;
 }
 
 .detailsBlock p:nth-child(3) {
-    margin-top: 8px;
+    margin-top: 2px;
     text-decoration: underline;
     font-size: 13px;
     color: #686868;
 }
 
+.detailsBlock .favIconCont {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 21px;
+    font-weight: 100px;
+}
+
+
+.detailsBlock .favIconCont > span {
+    margin-right: 27px;
+    padding: 2px 11px;
+    color: #7a7a7a;
+}
+
+.detailsBlock .favIconCont > span:hover {
+    color: rgb(244, 74, 93);
+}
+
+.detailsBlock .favIconCont > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0px;
+    width: 25px;
+    height: 33px;
+}
+
+
+.detailsBlock .favIconCont > div:hover {
+    background-color: rgba(208, 206, 206, 0.281);
+    border-radius: 5px;
+}
+
+.detailsBlock .favIconCont > div span.ellipsisV + .sharebtn {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -133px;
+    width: 160px;
+    padding: 11px 10px;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%), 0 2px 8px 0 rgb(0 0 0 / 12%);
+}
+
+
+.detailsBlock .favIconCont > div span.ellipsisV + .sharebtn > i {
+    color: rgb(198, 194, 194);
+}
+
+.detailsBlock .favIconCont > div:hover span.ellipsisV + .sharebtn {
+    display: block;
+}
+
 .flatDetail {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    height: 65px;
+    height: auto;    
+    display: flex;
+    justify-content: space-between;
+    /* border: solid 1px black; */
     background-color: rgb(243 241 241);
 }
 
-.detailsBlock .porpDescription {
+.flatDetail .detailDisplay {
+    width: 94%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.flatDetail .detailDisplay .rowOne,
+.flatDetail .detailDisplay .rowTwo 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    padding: 7px 0;
+}
+
+.flatDetail .detailDisplay .rowOne > div,
+.flatDetail .detailDisplay .rowTwo > div 
+{
+    width: 250px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.flatDetail .detailDisplay .rowOne {
+    border-top-left-radius: 8px;
+}
+
+.flatDetail .detailDisplay .rowTwo  {
+    border-bottom-left-radius: 8px;
+    display: none;
+}
+
+.flatDetail .detailDisplay .rowOne > div p,
+.flatDetail .detailDisplay .rowTwo > div p
+{
+    font-size: 11px;
+    font-weight: 300px;
+}
+
+.flatDetail .detailDisplay .rowOne > div h6,
+.flatDetail .detailDisplay .rowTwo > div h6
+{
+    font-size: 12px
+}
+
+.flatDetail .detailDisplay .rowOne > div > div,
+.flatDetail .detailDisplay .rowTwo > div > div
+{
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.flatDetail .detailDisplay .rowOne > div > div::before,
+.flatDetail .detailDisplay .rowTwo > div > div::before 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../myImage/iconspirit.svg);
+    background-repeat: no-repeat;
+}
+
+.flatDetail .detailDisplay .rowOne .midCont,
+.flatDetail .detailDisplay .rowTwo .midCont {
+    border-left: solid 1px rgb(179, 181, 179);
+    border-right: solid 1px rgb(179, 181, 179);
+}
+
+.flatDetail .detailDisplay .rowOne .leftCont > div::before {
+    background-position: -19px -137px;    
+}
+
+.flatDetail .detailDisplay .rowOne .midCont > div::before {
+    background-position: -16px -1764px;  
+}
+
+.flatDetail .detailDisplay .rowOne .rightCont > div::before {
+    background-position: -16px -588px;  
+}
+
+.flatDetail .detailDisplay .rowTwo .leftCont > div::before {
+    background-position: -17px -1927px;  
+}
+
+.flatDetail .detailDisplay .rowTwo .midCont > div::before {
+    background-position: -16px -974px;  
+}
+
+.flatDetail .detailDisplay .rowTwo .rightCont > div::before {
+    background-position: -16px -1029px;     
+}
+
+.flatDetail .disaplyBtnCont {
+    width: 4.5%;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flatDetail .disaplyBtnCont > button {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.detailsBlock .porpDescription > div:first-child .propFacing {
+    font-size: 13px;
+    padding-bottom: 7px;
+    margin-right: 15px;
+}
+
+.detailsBlock .porpDescription > div:first-child .propFacing::before {
+    content: "";
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    background-image: url("../myImage/iconspirit2.svg");
+    background-position: -24px -254px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+} 
+
+.detailsBlock .porpDescription .desc {
     width: 90%;
-    margin-bottom: 30px;
+    padding-bottom: 18px;
     display: flex;
 }
 
-.detailsBlock .porpDescription p {
+.detailsBlock .porpDescription .desc p {
     font-size: 13px;
     width: 99%;
     overflow: hidden;
@@ -262,11 +465,26 @@ p {
     text-overflow: ellipsis;
 }
 
-.detailsBlock .porpDescription span {
+.detailsBlock .porpDescription .desc p > button {
+    border: none;
+    background-color: transparent;
+    margin-left: -30px;
+    text-decoration: underline;
+}
+
+.detailsBlock .porpDescription .desc p > button:hover {
+    text-decoration: underline;
+}
+
+.detailsBlock .porpDescription .desc span {
     margin-left: -7px;
 }
 
-.detailsBlock .porpDescription span::after {
+.detailsBlock .porpDescription .desc span:hover {
+    cursor: pointer;
+}
+
+.detailsBlock .porpDescription .desc span::after {
     content: '\f107';
     padding-left: 7px;
     font-family: "FontAwesome";
@@ -276,9 +494,12 @@ p {
 .actionBlock {
     text-align: center;
     margin-left: 10px;
-    padding-top: 20px;
+    padding: 25px 20px 25px 20px;
     width: 211px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(243 241 241);
 }
 
@@ -294,8 +515,19 @@ p {
     margin-bottom: 20px;
 }
 
-.actionBlock button {
+.actionBlock > div:first-child, 
+.actionBlock .btnCont > div:first-child 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionBlock .btnCont > div:first-child button {
     margin-bottom: 15px;
+    padding-bottom: 4px;
+    padding: 0;
     width: 160px;
     height: 35px;
     border-radius: 20px;
@@ -303,24 +535,15 @@ p {
     border: solid 1px rgb(244, 74, 93);
 }
 
-.actionBlock button:focus {
-    outline: none;
-    
-    color: white;
+.actionBlock .btnCont > div:first-child button:focus {
+    outline: none;    
+    color: black;
 }
 
-.actionBlock button:hover {
-    /* outline: none; */
+.actionBlock .btnCont > div:first-child button:hover {
     border: solid 1px rgb(244, 74, 93);
     background-color:  rgb(161, 2, 20);
     color: white;
-}
-
-.actionBlock div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .actionBlock .ownerDetail {
@@ -332,6 +555,92 @@ p {
     font-size: 13px;
     text-decoration: underline;
 }
+
+.actionBlock .btnCont .modal-content {
+    width: 390px;
+    height: 85vh;
+}
+
+.actionBlock .btnCont .modal-content .modalHeader {
+    position: relative;
+}
+
+.actionBlock .btnCont .modal-content .modalHeader > button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.actionBlock .btnCont .modal-content .modalHeader .headerText {
+    padding: 40px 40px 0px 40px;
+    text-align: left;
+}
+
+.actionBlock .btnCont .modal-content .modalHeader .headerText h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.actionBlock .btnCont .modalBody {
+    padding: 0 0 20px 0;
+}
+
+.actionBlock .btnCont .modalBody .contact {
+    position: relative;
+    margin-top: 60px;
+}
+
+.actionBlock .btnCont .contact input {
+    width: 85%;
+    padding-bottom: 2px;
+    height: auto;
+    border: none;
+    border-bottom: solid 1px #d7d7d7;
+    font-size: 16px;
+}
+
+.actionBlock .btnCont .contact label {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    color: #878787;
+    transition: .3s ease-in-out;
+}
+.actionBlock .btnCont .contact input:focus {
+    outline: none;
+}
+.actionBlock .btnCont .contact input:focus + label {
+    font-size: 13px;
+    bottom: 27px;
+}
+
+.actionBlock .btnCont .modalFooter > div {
+    margin-bottom: 40px;
+    padding: 0 40px;
+}
+
+.actionBlock .btnCont .modalFooter > div > p {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 14px;
+}
+.actionBlock .btnCont .modalFooter > div > p a {
+    text-decoration: underline;
+}
+
+.actionBlock .btnCont .modalFooter > div > button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(244, 74, 93);
+    color: white;
+}
+
+
 /* CARD Section Ends */
 
 

@@ -1,10 +1,14 @@
 
-
-// const payload = ""
-
-function selector(event) {
-    // console.log(event.target.value);
-}
+function checkPosition(ev) {
+    // console.log("window.scrollY")
+    // console.log(window.scrollY);
+    
+    if (window.scrollY >= 1400) {
+        document.querySelector('.formCont').style.position = "relative";
+    }else {
+        document.querySelector('.formCont').style.position = "fixed";
+    }
+} 
 
 function personalDetail(arg) {
     if(arg === 'owner'){
