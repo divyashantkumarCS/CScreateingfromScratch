@@ -4,9 +4,11 @@ function checkPosition(ev) {
     // console.log(window.scrollY);
     
     if (window.scrollY >= 1400) {
-        document.querySelector('.formCont').style.position = "relative";
+        document.querySelector('.formCont').style.position = "absolute";
+        document.querySelector('.formCont').style.top = "1400px";
     }else {
         document.querySelector('.formCont').style.position = "fixed";
+        document.querySelector('.formCont').style.top = "75px";
     }
 } 
 
